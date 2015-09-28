@@ -3,13 +3,14 @@ var lightsOff = JSON.stringify({"on":false});
 //var destination = "http://10.0.1.79/api/3ef57fa526e03ca7cac377111cd97d3/lights/4/state";
 var response = "";
 
-function sendPutMsg(message, destination) {
+
+function sendPutMsg(message) {
     sendMessage('PUT', message, destination);
 }
 
-function sendMessage(command, message, destination)
+function sendMessage(command, message)
 {
-
+console.log(window.destination);
     if (window.XMLHttpRequest)
 
     {
@@ -32,10 +33,10 @@ function sendMessage(command, message, destination)
                     response="Error "+http.status
                 }
             }
-        }
+        };
         http.send(message);
     }
-    ;
+    
     console.log(message);
     console.log(x);
     console.log(y);

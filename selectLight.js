@@ -1,6 +1,6 @@
 
 "use strict";
-var destination;
+window.destination;
 
 //Initialize the light class
 class HueLight {
@@ -36,6 +36,6 @@ var lightList = [
 
 function selectLight(lightID) {
 	//Initialize destination URL based on light selection
-	var destination = "http://" + lightList[lightID].ip + "/api/" + lightList[lightID].username + "/lights/" + lightList[lightID].number + "/state";
-	console.log("set destination to: " + destination);
+	window.destination = "http://" + lightList[lightID].ip + "/api/" + lightList[lightID].username + "/lights/" + lightList[lightID].number + "/state";
+	console.log("set destination to: " + window.destination);
 }
