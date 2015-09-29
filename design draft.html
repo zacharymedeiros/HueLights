@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script src="jquery-2.1.4.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="newstyle.css">
+        <script src="sendMessage.js"></script>
+        <script src="lightStates.js"></script>
+        <script src='spectrum.js'></script>
+        <script src='selectLight.js'></script>
+        <link rel='stylesheet' href='spectrum.css' />
+        <script src='transformer.js'></script>
+	</head>
+		<body>
+            <div class="header">
+				<div class="container">
+					<h1>Hue</h1>
+					<p></p>
+                    
+                    <button id="on" type="button" onclick="sendPutMsg(lightsOn)">Lights ON</button</a>
+                    <button id="off" type="button" onclick="sendPutMsg(lightsOff)">Lights OFF</button</a>
+                    <button id="color" type="button" onclick="changeColor()">Change Color</button</a>
+
+                    <button id="light" type="button" onclick="selectLight(0)">Light 1</button</a>
+                    <button id="light" type="button" onclick="selectLight(1)">Light 2</button</a>
+                    <button id="light" type="button" onclick="selectLight(2)">Light 3</button</a>    
+                    <button id="light" type="button" onclick="selectLight(3)">Light 4</button</a>
+                    <button id="light" type="button" onclick="selectLight(4)">Light 5</button</a>
+                    <button id="light" type="button" onclick="selectLight(5)">Light 6</button</a>
+                    <button id="light" type="button" onclick="selectLight(6)">Light 7</button</a>
+                    <button id="light" type="button" onclick="selectLight(7)">Light 8</button</a>
+                    <button id="light" type="button" onclick="selectLight(8)">Light 9</button</a>    
+                    <button id="light" type="button" onclick="selectLight(9)">Light 10</button</a>
+                    <button id="light" type="button" onclick="selectLight(10)">Light 11</button</a>
+                    <button id="light" type="button" onclick="selectLight(11)">Light 12</button</a> 
+                    <button id="light" type="button" onclick="selectLight(12)">Light 13</button</a>
+                    <button id="light" type="button" onclick="selectLight(13)">Light 14</button</a>    
+                    <button id="light" type="button" onclick="selectLight(14)">Light 15</button</a>
+                    <button id="light" type="button" onclick="selectLight(15)">Light 16</button</a>
+                    <button id="light" type=ß"button" onclick="selectLight(16)">Light 17</button</a>            
+                  
+                </div>
+
+            </div>
+            <br/>
+            
+            <input type='text' id="flat" />
+
+        </body>  
+</html>
+
+
+
+<script>
+$("#flat").spectrum({
+    flat: true,
+    showInput: true
+});
+$("#flatClearable").spectrum({
+    flat: true,
+    showInput: true,
+    allowEmpty:true
+
+});
+</script>
+
