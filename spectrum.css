@@ -6,8 +6,6 @@ License: MIT
 ***/
 
 .sp-container {
-    float:center;
-    margin-left:500px;
     position:absolute;
     top:0;
     left:0;
@@ -162,7 +160,16 @@ License: MIT
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr=#FFFFFFFF, endColorstr=#00CC9A81)";
     filter : progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr='#FFFFFFFF', endColorstr='#00CC9A81');
 }
-
+.sp-val {
+    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000000), to(rgba(204, 154, 129, 0)));
+    background-image: -webkit-linear-gradient(bottom, #000000, rgba(204, 154, 129, 0));
+    background-image: -moz-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+    background-image: -o-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+    background-image: -ms-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+    background-image: linear-gradient(to top, #000, rgba(204, 154, 129, 0));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00CC9A81, endColorstr=#FF000000)";
+    filter : progid:DXImageTransform.Microsoft.gradient(startColorstr='#00CC9A81', endColorstr='#FF000000');
+}
 
 .sp-hue {
     background: -moz-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
@@ -248,11 +255,12 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 
 .sp-container {
     border-radius: 0;
-    background-color: white;
+    background-color: #ECECEC;
+    border: solid 1px #f0c49B;
     padding: 0;
 }
 .sp-container, .sp-container button, .sp-container input, .sp-color, .sp-hue, .sp-clear {
-    font: normal 12px "Roboto", "Roboto", "Roboto", Roboto, Roboto, sans-serif;
+    font: normal 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -285,7 +293,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
    color: #222;
 }
 .sp-input:focus  {
-    border: 1px solid white;
+    border: 1px solid orange;
 }
 .sp-input.sp-validation-error {
     border: 1px solid red;
@@ -323,7 +331,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     border:solid 2px transparent;
 }
 .sp-palette .sp-thumb-el:hover, .sp-palette .sp-thumb-el.sp-thumb-active {
-    border-color: white;
+    border-color: orange;
 }
 .sp-thumb-el {
     position:relative;
@@ -411,20 +419,34 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 
 /* Buttons: http://hellohappy.org/css3-buttons/ */
 .sp-container button {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Roboto, sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  background: #43e69d;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  border: solid #ffffff 2px;
+  background-color: #eeeeee;
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  border-radius: 3px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1;
+  padding: 5px 4px;
+  text-align: center;
+  text-shadow: 0 1px 0 #eee;
+  vertical-align: middle;
 }
 .sp-container button:hover {
-    background: #66abff;
-    text-decoration: none;
+    background-color: #dddddd;
+    background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+    background-image: linear-gradient(to bottom, #dddddd, #bbbbbb);
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #ddd;
 }
 .sp-container button:active {
     border: 1px solid #aaa;

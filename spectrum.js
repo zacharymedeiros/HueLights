@@ -101,6 +101,13 @@
                     "<div class='sp-top sp-cf'>",
                         "<div class='sp-fill'></div>",
                         "<div class='sp-top-inner'>",
+                            "<div class='sp-color'>",
+                                "<div class='sp-sat'>",
+                                    "<div class='sp-val'>",
+                                        "<div class='sp-dragger'></div>",
+                                    "</div>",
+                                "</div>",
+                            "</div>",
                             "<div class='sp-clear sp-clear-display'>",
                             "</div>",
                             "<div class='sp-hue'>",
@@ -110,7 +117,9 @@
                         "</div>",
                         "<div class='sp-alpha'><div class='sp-alpha-inner'><div class='sp-alpha-handle'></div></div></div>",
                     "</div>",
-                    
+                    "<div class='sp-input-container sp-cf'>",
+                        "<input class='sp-input' type='text' spellcheck='false'  />",
+                    "</div>",
                     "<div class='sp-initial sp-thumb sp-cf'></div>",
                     "<div class='sp-button-container sp-cf'>",
                         "<a class='sp-cancel' href='#'></a>",
@@ -322,7 +331,13 @@
             });
             textInput.keydown(function (e) { if (e.keyCode == 13) { setFromTextInput(); } });
 
-           
+            cancelButton.text(opts.cancelText);
+            cancelButton.bind("click.spectrum", function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+                revert();
+                hide();
+            });
 
             clearButton.attr("title", opts.clearText);
             clearButton.bind("click.spectrum", function (e) {
