@@ -3,6 +3,7 @@
 	<head>
         <script src="jquery-2.1.4.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="newstyle.css">
         <script src="sendMessage.js"></script>
         <script src="lightStates.js"></script>
@@ -15,8 +16,10 @@
             <div class="header">
 				<div class="container">
 					<h1>Hue</h1>
-					<p></p>
-                    
+                </div>
+            </div>
+            <div class="controller">
+
                     <button id="on" type="button" onclick="sendPutMsg(lightsOn)">Lights ON</button</a>
                     <button id="off" type="button" onclick="sendPutMsg(lightsOff)">Lights OFF</button</a>
                     <button id="color" type="button" onclick="changeColor()">Change Color</button</a>
@@ -38,13 +41,10 @@
                     <button id="light" type="button" onclick="selectLight(14)">Light 15</button</a>
                     <button id="light" type="button" onclick="selectLight(15)">Light 16</button</a>
                     <button id="light" type=ß"button" onclick="selectLight(16)">Light 17</button</a>            
-                  
+                    
                 </div>
-
-            </div>
-            <br/>
-            
-            <input type='text' id="flat" />
+                   <div><input class="colorpicker" type='text' id="flat" /></div>
+                  
 
         </body>  
 </html>
@@ -63,4 +63,6 @@ $("#flatClearable").spectrum({
 
 });
 </script>
+
+
 
