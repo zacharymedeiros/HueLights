@@ -9,11 +9,6 @@ body {
   background: #ecf0f1;
 }
 
-.top {
-background: black;
-height: 60px;
-
-}
 
 .header {
   height: 10px;
@@ -27,43 +22,28 @@ height: 60px;
 	font-style: bold;
 	line-height: 100px; 
 	font-size: 100px;
-	margin-top: 50px;
+	margin-top: 80px;
 	margin-bottom: 20px;
+  margin-left: 60px;
 	text-transform: uppercase; 
 }
 
 
 .controller {
-  height: 200px;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 50px;
   text-align: left; 
-  background: #ecf0f1;;
+  background: #ecf0f1;
 
 }
 
-
-.controller button {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Roboto, sans-serif;
-  color: #ecf0f1;
-  font-size: 20px;
-  background: #43e69d;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  border: solid #ecf0f1 2px;
-  float:left;
-}
-
-.controller button:hover {
-  background: #66abff;
-  text-decoration: none;
+.selector {
+ background: #ecf0f1;
+ margin-left: 1200px;
+ margin-right: 200px;
+ margin-bottom: 50px;
 }
 
 
-.bottom {
-  background: black;
-  height: 60px;
-}
+

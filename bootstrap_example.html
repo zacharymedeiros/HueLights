@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content=""
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='spectrum.css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="newstyle.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">IoT Controller</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hue Controller</h1>
+        <p></p>
+        <button class="btn btn-primary btn-lg"id="on" type="button" onclick="sendPutMsg(lightsOn)">Lights ON</button</a>
+        <button class="btn btn-primary btn-lg" id="off" type="button" onclick="sendPutMsg(lightsOff)">Lights OFF</button</a>
+        <button class="btn btn-primary btn-lg" id="color" type="button" onclick="changeColor()">Change Color</button</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Zach's Room</h2>
+          <p></p>
+          <p>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(0)">Light 1</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(1)">Light 2</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(2)">Light 3</button</a>    
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(3)">Light 4</button</a>
+        </div>
+        <div class="col-md-4">
+          <h2>Waseem's Room</h2>
+          <p></p><p>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(4)">Light 5</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(5)">Light 6</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(6)">Light 7</button</a>    
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(7)">Light 8</button</a>
+        </div>
+        <div class="col-md-4">
+          <h2>Bala's Room</h2>
+          <p></p>
+           <button class="btn btn-default" id="light" type="button" onclick="selectLight(8)">Light 9</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(9)">Light 10</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(10)">Light 11</button</a>    
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(11)">Light 12</button</a>
+       </div>
+        <div class="col-md-4">
+          <h2>Living Room</h2>
+          <p></p>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(12)">Light 13</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(13)">Light 14</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(14)">Light 15</button</a>    
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(15)">Light 16</button</a>
+            <button class="btn btn-default" id="light" type="button" onclick="selectLight(16)">Light 17</button</a>
+        </div>
+
+      </div>
+      <hr>
+
+      <footer>
+        <p>&copy; Zachary Medeiros 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Hue Control Files -->
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="sendMessage.js"></script>
+    <script src="lightStates.js"></script>
+    <script src='spectrum.js'></script>
+    <script src='selectLight.js'></script>
+    <script src='transformer.js'></script>
+
+      <div class = "selector">
+            <input type='text' id="flat"/>
+          </div>
+        
+
+  </body>
+
+</html>
+
+<script>
+$("#flat").spectrum({
+    flat: true,
+    showInput: true
+});
+$("#flatClearable").spectrum({
+    flat: true,
+    showInput: true,
+    allowEmpty:true
+
+});
+</script>
+
+
+
+
