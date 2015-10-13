@@ -15,6 +15,7 @@
     <link rel='stylesheet' href='spectrum.css' />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="newstyle.css">
+
   </head>
 
   <body>
@@ -61,6 +62,7 @@
         <button class="btn btn-primary btn-lg" id="on" type="button" onclick="sendPutMsg(lightsOn)">Lights ON</button</a>
         <button class="btn btn-primary btn-lg" id="off" type="button" onclick="sendPutMsg(lightsOff)">Lights OFF</button</a>
         <button class="btn btn-primary btn-lg" id="color" type="button" onclick="changeColor()">Change Color</button</a>
+        <button class="btn btn-primary btn-lg" id="setup" type="button" onclick="setup()">Activate Personal Controls</button</a>
       </div>
     </div>
 
@@ -127,6 +129,7 @@
     <script src='spectrum.js'></script>
     <script src='selectLight.js'></script>
     <script src='transformer.js'></script>
+    <script src='login.js'></script>
 
       <div class = "selector">
             <input type='text' id="flat"/>
@@ -155,6 +158,13 @@ $("#flatClearable").spectrum({
 
 });
 </script>
+
+<script>
+$("h5").hide();
+$("h6").hide();
+$("h7").hide();
+</script>
+
 
 
 
