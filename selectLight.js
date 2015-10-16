@@ -12,7 +12,7 @@ class HueLight {
 	}	
 };
 
-//Fill lightList with list of lights and their properties
+//Fill lightList with list of lights and their properties (found through UPnP discovery)
 var lightList = [
 	new HueLight("Zach", "1", "10.0.1.15", "36c82706294f104bc187523c0761ff", "top"),
 	new HueLight("Zach", "2", "10.0.1.15", "36c82706294f104bc187523c0761ff", "bottom"),
