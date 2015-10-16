@@ -1,4 +1,4 @@
-window.setup = function() {
+window.activatePersonalControls = function() {
 
 	FB.api('/me', function(response) {
 	    window.username=(response["name"]);

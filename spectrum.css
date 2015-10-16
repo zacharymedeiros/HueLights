@@ -239,8 +239,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 
 .sp-container {
     border-radius: 0;
-    background-color: #ECECEC;
-    border: solid 1px #f0c49B;
+    background-color: ##ecf0f1;
+    border: solid 1px #ecf0f1;
     padding: 0;
 }
 .sp-container, .sp-container button, .sp-container input, .sp-color, .sp-hue, .sp-clear {
@@ -292,7 +292,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 }
 .sp-picker-container {
     width: 172px;
-    border-left: solid 1px #fff;
+    border-left: solid 1px #ecf0f1;
 }
 
 /* Palettes */
