@@ -9,11 +9,9 @@ body {
   background: #ecf0f1;
 }
 
-
 .header {
   height: 10px;
   text-align: center; 
-
 }
 
 .header h1 {
@@ -28,20 +26,17 @@ body {
 	text-transform: uppercase; 
 }
 
-
 .controller {
   margin-left: 300px;
   margin-right: 300px;
   margin-top: 50px;
   text-align: left; 
   background: #ecf0f1;
-
 }
 
 .selector {
  background: #ecf0f1;
 }
-
 
 /**************************
   DEFAULT BOOTSTRAP STYLES
@@ -67,7 +62,6 @@ body {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-
 }
   
 .btn-lg {
@@ -98,6 +92,7 @@ body {
 .btn-primary.raised {
     box-shadow: 0 3px 0 0 #007299;
 }
+
 .btn-primary.raised:active, .btn-primary.raised.active {
     background: #33a6cc;
     box-shadow: none;
@@ -116,6 +111,7 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
@@ -124,9 +120,11 @@ body {
     background: #0099cc;
     color: #ffffff;
 }
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background: #33a6cc;
 }
+
 .btn-primary:active, .btn-primary.active {
     background: #007299;
     box-shadow: none;

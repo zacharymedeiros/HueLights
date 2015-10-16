@@ -1,24 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Make sure the following 3 tags come first-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content=""
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- Optional theme -->
+    <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href='spectrum.css' />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="newstyle.css">
-
+    <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
+    <!-- Facebook API Implementation-->
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -27,7 +25,6 @@
           version    : 'v2.5'
         });
       };
-
       (function(d, s, id){
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
@@ -36,26 +33,19 @@
          fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    
- 
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>Hue Controller</h1>
+        <!-- Facebook Login Button Code, taken from FB Developer Site-->
         <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
-
-
-        <p></p>
+        <!-- These are the controls that talk to the Hue Lights-->
         <button class="btn btn-primary btn-lg" id="on" type="button" onclick="sendPutMsg(lightsOn)">Lights ON</button</a>
         <button class="btn btn-primary btn-lg" id="off" type="button" onclick="sendPutMsg(lightsOff)">Lights OFF</button</a>
         <button class="btn btn-primary btn-lg" id="color" type="button" onclick="changeColor()">Change Color</button</a>
-        <button class="btn btn-primary btn-lg" id="setup" type="button" onclick="activatePersonalControls()">Activate Personal Controls</button</a>
+        <button class="btn btn-primary btn-lg" id="setup" type="button" onclick="activ()">Activate Personal Controls</button</a>
       </div>
     </div>
-
     <div class="container">
-      
       <div class="row">
           <h5>
             <div class="col-md-4">
@@ -93,11 +83,10 @@
             <button class="btn btn-default" id="light" type="button" onclick="selectLight(15)">Light 16</button</a>
             <button class="btn btn-default" id="light" type="button" onclick="selectLight(16)">Light 17</button</a>
         </div>
+        <!-- This is the Jquery light selector-->
         <div class = "selector"><input type='text' id="flat"/></div>
       </div>
-      
-    </div> <!-- /container -->
-
+    </div> 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -105,7 +94,6 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
     <!-- Hue Control Files -->
     <script src="jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -115,34 +103,7 @@
     <script src='selectLight.js'></script>
     <script src='transformer.js'></script>
     <script src='login.js'></script>
- 
-   
-      
-    
-
+    <script src="colorPicker.js"></script>
+    <script src="hideControls.js"></script>
   </body>
-
 </html>
-
-<script>
-$("#flat").spectrum({
-    flat: true,
-    showInput: true
-});
-$("#flatClearable").spectrum({
-    flat: true,
-    showInput: true,
-    allowEmpty:true
-
-});
-</script>
-
-<script>
-$("h5").hide();
-$("h6").hide();
-$("h7").hide();
-</script>
-
-
-
-
