@@ -1,6 +1,6 @@
 var transformColor = function(color) {
 
-//Pick out rgb values from raw color data and throw into an array
+//Pick out rgb values from color picker and pass into an array
 
 r = color["_r"];
 g = color["_g"];
@@ -47,10 +47,6 @@ z = rgb[0] * 0.0000000 + rgb[1] * 0.053077 + rgb[2] * 1.035763;
 x = x / (x + y + z);
 
 y = y / (x + y + z);
-
-//Potentially verify that the xy coordinate lies within Gamut B
-
-//Use the y value as brightness
 
 //Convert xy coordinates to JSON message
 return JSON.stringify({"xy":[x,y]});

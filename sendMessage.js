@@ -1,8 +1,6 @@
 var lightsOn = JSON.stringify({"on":true});
 var lightsOff = JSON.stringify({"on":false});
-//var destination = "http://10.0.1.79/api/3ef57fa526e03ca7cac377111cd97d3/lights/4/state";
 var response = "";
-
 
 function sendPutMsg(message) {
     sendMessage('PUT', message, destination);
@@ -36,10 +34,11 @@ console.log(window.destination);
         };
         http.send(message);
     }
-    
-    console.log(message);
-    console.log(x);
-    console.log(y);
+
+//Useful for debugging:   
+//console.log(message);
+//console.log(x);
+//console.log(y);
    
 }
 
