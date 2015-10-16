@@ -65,13 +65,7 @@ License: MIT
 .sp-fill {
     padding-top: 80%;
 }
-.sp-sat, .sp-val {
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-}
+
 
 .sp-alpha-enabled .sp-top {
     margin-bottom: 18px;
