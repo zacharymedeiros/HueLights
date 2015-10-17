@@ -4,13 +4,13 @@ window.activatePersonalControls = function() {
 	});
 
 	if (window.username == "Zach Medeiros") {
-		$("h5").show();
+		$("#zach").show();
 	}
 	else if (window.username == "Waseem Ahmad") {
-		$("h6").show();
+		$("#waseem").show();
 	}
 	else if (window.username == "Prashanth Bala") {
-		$("h7").show();
+		$("#bala").show();
 	}
 };
 
