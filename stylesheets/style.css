@@ -35,8 +35,7 @@ body {
 }
 
 .fb-login-button {
- display: inline-block;
-
+  display: block;
   margin-bottom: 0;
   margin-right:10px;
   margin-bottom: 10px:;
@@ -60,6 +59,17 @@ body {
  background: #ecf0f1;
 }
 
+#zach {
+  display:none;
+}
+
+#waseem {
+  display:none;
+}
+
+#bala {
+  display:none;
+}
 /**************************
   DEFAULT BOOTSTRAP STYLES
 **************************/
@@ -109,17 +119,7 @@ body {
 }
 
 
-#zach {
-  display:none;
-}
 
-#waseem {
-  display:none;
-}
-
-#bala {
-  display:none;
-}
 /***********************
   RAISED BUTTONS
 ************************/
