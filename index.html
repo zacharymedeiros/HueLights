@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link href="thirdparty/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="thirdparty/bootstrap/stylesheets/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href='thirdparty/spectrum/stylesheets/spectrum.css' />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
   <body>
     <!-- Facebook API Implementation-->
-    <script src="thirdparty/facebook/js/fbapi.js"></script>
+    <script js.src="https://connect.facebook.net/en_US/all.js"></script>
     <div class="jumbotron">
       <div class="container">
         <h1>Hue Controller</h1>
@@ -64,15 +64,14 @@
         </div>
         <!-- This is the Jquery light selector-->
         <div class = "selector"><input type='text' id="flat"/></div>
+        <div id="slider-vertical" style="height:200px;"></div>
       </div>
     </div> 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="thirdparty/bootstrap/js/bootstrap.min.js"></script>
     <!-- Hue Control Files -->
     <script src="thirdparty/jquery/jquery-2.1.4.min.js"></script>
     <script src="thirdparty/bootstrap/js/bootstrap.min.js"></script>
