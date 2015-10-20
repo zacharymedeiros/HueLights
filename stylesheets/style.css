@@ -18,17 +18,19 @@ body {
 }
 
 .fb-login-button {
-  display: block;
-  margin-bottom: 0;
-  margin-right:10px;
-  margin-bottom: 10px:;
+  display: inline;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px:;
   margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.33;
   vertical-align: middle;
-  border: 1px solid transparent;
+  border: 1px #3b55a0;
   border-radius: 4px;
+  background:linear-gradient(#4c69ba, #3b55a0)
 }
 
 .selector {
@@ -46,6 +48,8 @@ body {
 #bala {
   display:none;
 }
+
+
 /**************************
   DEFAULT BOOTSTRAP STYLES
 **************************/

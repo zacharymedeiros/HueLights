@@ -21,13 +21,13 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Hue Controller</h1>
-        <!-- Facebook Login Button Code, taken from FB Developer Site-->
-        <div class="fb-login-button fb-no-jump" size="xlarge" scope="user_about_me, email"></div>
         <!-- These are the controls that talk to the Hue Lights-->
         <button class="btn btn-primary btn-lg" id="on" type="button" onclick="sendPutMsg(lightsOn)">Lights On</button</a>
         <button class="btn btn-primary btn-lg" id="off" type="button" onclick="sendPutMsg(lightsOff)">Lights Off</button</a>
         <button class="btn btn-primary btn-lg" id="color" type="button" onclick="changeColor()">Change Color</button</a>
         <button class="btn btn-primary btn-lg" id="setup" type="button" onclick="activatePersonalControls()">Activate Personal Controls</button</a>
+        <!-- Facebook Login Button Code, taken from FB Developer Site-->
+        <button class="fb-login-button" id="loginbutton" size="xlarge" scope="user_about_me, email"></a>
       </div>
     </div>
     <div class="container">
