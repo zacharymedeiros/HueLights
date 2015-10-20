@@ -1657,7 +1657,9 @@
     // *Assumes:* h is contained in [0, 1] or [0, 360] and s and v are contained in [0, 1] or [0, 100]
     // *Returns:* { r, g, b } in the set [0, 255]
      function hsvToRgb(h, s, v) {
-
+        // Zach Medeiros- Assigned S,V maximum values.
+        s=100;
+        v=100;
         h = bound01(h, 360) * 6;
         s = bound01(s, 100);
         v = bound01(v, 100);
