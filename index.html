@@ -27,7 +27,7 @@
         <button class="btn btn-primary btn-lg" id="color" type="button" onclick="changeColor()">Change Color</button</a>
         <button class="btn btn-primary btn-lg" id="setup" type="button" onclick="activatePersonalControls()">Activate Personal Controls</button</a>
         <!-- Facebook Login Button Code, taken from FB Developer Site-->
-        <button class="fb-login-button" id="loginbutton" size="xlarge" scope="user_about_me, email"></a>
+        <button class="fb-login-button" data-auto-logout-link="false" size="xlarge" scope="user_about_me, email"></a>
       </div>
     </div>
     <div class="container">
@@ -81,6 +81,6 @@
     <script src='js/transformer.js'></script>
     <script src='js/login.js'></script>
     <script src="js/colorPicker.js"></script>
-    
+    <script src="js/init.js"></script>
   </body>
 </html>

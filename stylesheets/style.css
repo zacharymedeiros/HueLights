@@ -1,7 +1,12 @@
+html { 
+  visibility:hidden; 
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
 }
+
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -35,6 +40,7 @@ body {
 
 .selector {
  background: #ecf0f1;
+ margin-top: 10px;
 }
 
 #zach {
