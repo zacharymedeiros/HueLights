@@ -1,3 +1,5 @@
+[Video Demonstration](https://www.youtube.com/watch?v=3OX88WdymtQ)
+
 # What is it?
 
 This is a specific use application that allows for the control of the Phillips Hue bulbs in an apartment.  The goal is to make it easier to control a large number of lights and to arrange them by room, only allowing each housemate to control his/her lights as well as the lights in the common areas.
